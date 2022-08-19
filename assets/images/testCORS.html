@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>TEST CORS</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </header>
+    <body>
+        
+
+        <script>
+            var req = new XMLHttpRequest();
+            req.onload = reqListener;
+            req.open('get','http://www.tnex.com.vn/4-meo-thong-minh-de-tiet-kiem-tien-khi-mua-sam-mua-tuu-truong/',true);
+            req.withCredentials = true;
+            req.send();
+
+            function reqListener(){
+                document.write(req.responseText);
+            }
+        </script>
+    </body>
+</html>
