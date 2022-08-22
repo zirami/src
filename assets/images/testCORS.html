@@ -11,7 +11,7 @@
             var req = new XMLHttpRequest();
             req.onload = reqListener;
             req.open('get','http://www.tnex.com.vn/4-meo-thong-minh-de-tiet-kiem-tien-khi-mua-sam-mua-tuu-truong/',true);
-            req.withCredentials = true;
+            req.withCredentials = false;
             req.send();
 
             function reqListener(){
